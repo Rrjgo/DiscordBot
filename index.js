@@ -3,6 +3,20 @@ require('dotenv').config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+let gamestat = {
+    started: false,
+    rolls: [{
+        id: "tuojrtuh",
+        number: 20
+    }, {
+        id: "hgj",
+        number: 30
+    }]
+}
+
+//gamestat.rolls.map(item=>item.number)
+//[ 20, 30 ]
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
